@@ -1,0 +1,29 @@
+1- Run
+npm install -g grunt-cli
+2- npm init
+3- change name to gruntproject
+4- npm install -s grunt
+5- create Gruntfile.js
+6- module.exports = function (grunt) {
+    grunt.registerTask('speak', function(){
+        console.log('speaking');
+    }
+}
+7- run grunt speak
+8- plugins
+concat: {
+
+            js: {
+                src: ['js/custom.js', 'js/jquery-1.11.3.min.js'],
+                dest: 'dist/js/built.js',
+            },
+            css: {
+                src: ['css/main.css', 'css/font-awesome.min.css'],
+                dest: 'dist/css/built.css',
+            }
+        },
+
+grunt.loadNpmTasks('grunt-contrib-concat');
+9- run grunt conact
+10- other plugins and set default
+11- grunt.registerTask('default', ['concat', 'watchChokidar', 'sass']);

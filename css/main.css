@@ -1,0 +1,15 @@
+/*start global rules*/
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*start navbar*/
+.scrolled {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.navbar {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
